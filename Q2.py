@@ -59,17 +59,21 @@ def get_y_mean(Ek, training_data):
   return y_mean
 
 # ## Load data
+<<<<<<< HEAD
+f_1 = np.loadtxt(open("./f1.csv","rb"),delimiter=",",skiprows=0)
+=======
 data_homework_1 = np.loadtxt(open("./f1.csv","rb"),delimiter=",",skiprows=0)
 data_homework_2 = np.loadtxt(open("./f2.csv","rb"),delimiter=",",skiprows=0)
+>>>>>>> 3af1b895cd397b272fbdcfe9023429899093c229
 
 # Training
 # ## Divide the data into training and testing
-Normal_signal_train = data_homework_1[0:50, :]
-Normal_signal_test = data_homework_1[50:100, :]
-Cyclic_signal_train = data_homework_1[100:150, :]
-Cyclic_signal_test = data_homework_1[150:200, :]
-Up_shift_signal_train = data_homework_1[200:250, :]
-Up_shift_signal_test = data_homework_1[250:300, :]
+Normal_signal_train = f_1[0:50, :]
+Normal_signal_test = f_1[50:100, :]
+Cyclic_signal_train = f_1[100:150, :]
+Cyclic_signal_test = f_1[150:200, :]
+Up_shift_signal_train = f_1[200:250, :]
+Up_shift_signal_test = f_1[250:300, :]
 
 #Set up the value of K
 K = 10
