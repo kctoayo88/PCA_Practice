@@ -59,8 +59,8 @@ def get_y_mean(Ek, training_data):
   return y_mean
 
 # ## Load data
-data_homework_1 = np.loadtxt(open("./homework 1_1.csv","rb"),delimiter=",",skiprows=0)
-data_homework_2 = np.loadtxt(open("./homework 1_2.csv","rb"),delimiter=",",skiprows=0)
+data_homework_1 = np.loadtxt(open("./f1.csv","rb"),delimiter=",",skiprows=0)
+data_homework_2 = np.loadtxt(open("./f2.csv","rb"),delimiter=",",skiprows=0)
 
 # Training
 # ## Divide the data into training and testing
