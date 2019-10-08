@@ -13,6 +13,7 @@ plt.show()
 pca = PCA(n_components=3)
 dimension_reduction = pca.fit_transform(data_T)
 print(dimension_reduction.shape)
+
 # ## Plot result
 plt.plot(dimension_reduction)
 plt.savefig("./homework_Q1.png", dpi=300, format="png")
